@@ -8,10 +8,13 @@ public class App {
         l[3] = new Lutador("Lutador 4", "Japão", 32, 1.90, 85.0, 15, 5, 1);
         l[4] = new Lutador("Lutador 5", "Rússia", 29, 1.78, 77.0, 9, 2, 3);
         l[5] = new Lutador("Lutador 6", "Canadá", 31, 1.82, 82.0, 11, 4, 1);
-        for (int i = 0; i < l.length; i++) {
-            l[i].apresentar();
-        }
+        
+       Luta luta = new Luta();
+       luta.marcarLuta(l[0], l[4]);
 
+       luta.lutar();
+        
+        
         
     }
 }

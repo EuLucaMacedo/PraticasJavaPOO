@@ -9,11 +9,11 @@ public class Livro implements Publicacao {
     public Livro() {
 
     }
-    public Livro(String titulo, String autor, int totPaginas, int pagAtual, Pessoa leitor) {
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
         this.titulo = titulo; 
         this.autor = autor; 
         this.totPaginas = totPaginas; 
-        this.pagAtual = pagAtual;
+        this.pagAtual = 001;
         this.aberto = false; 
         this.leitor = leitor;
     }
@@ -67,7 +67,18 @@ public class Livro implements Publicacao {
     }
 
     public void detalhes() {
-        throw new UnsupportedOperationException("Método detalhes() ainda não implementado!");
+        System.out.println("=========== Dados Livro ===========");
+        System.out.println("Titulo do Livro: " + this.titulo);
+        System.out.println("Autor Pricipal: " + this.autor);
+        System.out.println("O Livro esta Aberto? " + this.isAberto());
+        System.out.println("Total de Paginas: " + this.totPaginas);
+        System.out.println("Pagina Atual: " + this.pagAtual);
+
+        System.out.println("=========== Dados Leitor ===========");
+        System.out.println("Nome do Leitor: " + this.leitor.getNome());
+        System.out.println("Idade: " +  this.leitor.getIdade());
+        System.out.println("Sexo: " + this.leitor.getSexo());
+        
     }
     
     
@@ -83,16 +94,31 @@ public class Livro implements Publicacao {
 
     @Override
     public void folhear(int p) {
-        this.pagAtual = p;
+        if(p > 0 && p <= this.totPaginas){
+            this.pagAtual = p;
+        }else{
+            throw new IllegalArgumentException("Pagina Invalida" + p);
+        }
+        
     }
 
     @Override
     public void avancarPag() {
-        this.pagAtual ++;
+        if(this.pagAtual <= this.totPaginas){
+            this.pagAtual ++;
+        }else{
+            System.out.println("Pagina Indisponivel");
+        }
+        
     }
 
     @Override
     public void voltarPag() {
-        this.pagAtual --;
+        if(this.pagAtual > 0){
+            this.pagAtual --;
+        }else{
+            System.out.println("Pagina Indisponivel!");
+        }
+            
     }
 }   

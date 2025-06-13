@@ -30,4 +30,7 @@ public class Aluno extends Pessoa{
     public void cancelarMatricula() {
         System.out.println("Matricula Cancelada");
     }
+     public void pagarMensalidade() {
+        System.out.println("Mensalidade paga!\nDar Baixa no Sistema na Matricula: " + this.matricula);
+     }
 }

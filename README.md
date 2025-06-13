@@ -5,6 +5,9 @@ Estudo e Desenvolvimento da Programação Orientada a Objetos Aplicada em Java
 - Encapsulamento (Funcionalidades de Controle Remoto Aplicadas com Encapsulamento)
 - Interface (Códido de calculo de áres implementando Interface)
 - Relacionamento entre Classes (Classes integradas - Implementando em Campeonatos de Lutas)
+
+## Projeto Final
+- Aplicação Java com todas as implementações de Programação Orientada a Objetos (POO)
  
 ## Desenvolvedor 
 - Luca Macedo ( <a href="https://www.linkedin.com/in/luca-macedo-659124219/">Linkedin</a> )

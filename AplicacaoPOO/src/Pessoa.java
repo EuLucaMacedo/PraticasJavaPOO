@@ -4,10 +4,10 @@ public abstract class Pessoa {
     protected String sexo;
     protected int experiencia;
 
-    public Pessoa() {
+    protected Pessoa() {
     }
 
-    public Pessoa(String nome, int idade, String sexo) {
+    protected Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
@@ -48,7 +48,8 @@ public abstract class Pessoa {
     }
 
     public void ganharExp() {
-        System.out.println("Ganhando Experiencia! ");
+        this.experiencia = this.experiencia + 1;
+        System.out.println("Ganhando Experiencia! " + getExperiencia());
     }
 
 }

@@ -1,6 +1,6 @@
 public class Video implements AcoesVideo{
     private String titulo;
-    private float avaliacao;
+    private int avaliacao;
     private int views;
     private int curtidas;
     private boolean reproduzindo;
@@ -13,6 +13,7 @@ public class Video implements AcoesVideo{
         this.views = 1;
         this.curtidas = 0;
         this.reproduzindo = false;
+        this.avaliacao = 0;
     }
 
     public String getTitulo() {
@@ -23,11 +24,11 @@ public class Video implements AcoesVideo{
         this.titulo = titulo;
     }
 
-    public float getAvaliacao() {
+    public int getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvaliacao(float avaliacao) {
+    public void setAvaliacao(int avaliacao) {
         this.avaliacao = avaliacao;
     }
 

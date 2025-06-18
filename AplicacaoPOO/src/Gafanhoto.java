@@ -28,6 +28,8 @@ public class Gafanhoto extends Pessoa{
     }
 
     public void viuMaisUm() {
+        this.totAssistido = totAssistido + 1;
         System.out.println("Assistindo Mais Videos");
+        System.out.println("Videos Assistidos: " +  getTotAssistido());
     }   
 }

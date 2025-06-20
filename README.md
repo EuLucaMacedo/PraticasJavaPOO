@@ -7,6 +7,7 @@ Estudo e Desenvolvimento da Programação Orientada a Objetos Aplicada em Java
 - Relacionamento entre Classes (Classes integradas - Implementando em Campeonatos de Lutas)
 - Herança (Herança Aplicada a Alunos/Pessoas)
 - Polimorfismo (Estudo de Polimorfismo com Java - Aplicando com Animais e suas Caracteristicas)
+- Construtores (Fazendo um Sistema de Validação de Senhas)
 
 ## Projeto Final
 - Aplicação Java com todas as implementações de Programação Orientada a Objetos (POO)

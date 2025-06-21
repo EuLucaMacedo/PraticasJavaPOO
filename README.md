@@ -8,6 +8,7 @@
 - Herança (Herança Aplicada a Alunos/Pessoas)
 - Polimorfismo (Estudo de Polimorfismo com Java - Aplicando com Animais e suas Caracteristicas)
 - Construtores (Fazendo um Sistema de Validação de Senhas)
+- Academia ( Criando um codigo de atualização de Planos dentro de uma Academia)
 
 ## Projeto Final
 - Aplicação Java com todas as implementações de Programação Orientada a Objetos (POO)

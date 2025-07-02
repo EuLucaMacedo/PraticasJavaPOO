@@ -25,7 +25,24 @@ public class App {
 
        
         if(respo.equals("1")) {
-            System.out.println("Testando");
+            System.out.println("Digite o nome do Aluno que dejesa trocar: ");
+            String nomeBusca = leia.nextLine();
+
+            boolean encontrado = false;
+
+            for(int i = 0; i < a.length; i++) {
+                if(a[i].getNome().equalsIgnoreCase(nomeBusca)) {
+                    System.out.println("Digite o novo Plano para " + a[i].getNome() + ": ");
+                    String novoPlano = leia.nextLine();
+                    a[i].alterarPlano(novoPlano);
+                    System.out.println("Plano Alterado com Sucesso!");
+                    encontrado = true;
+                    break;
+                } 
+            }
+            if(!encontrado) {
+                System.out.println("Aluno não Encontrado! ");
+            }
 
         } else if(respo.equals("2")) {
             System.out.println("Obrigado Por Treinar Conosco!");
@@ -33,5 +50,7 @@ public class App {
         } else {
             System.out.println("Opção Inválida! ");
         }
+
+        leia.close();
     }
 }

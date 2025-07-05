@@ -51,6 +51,7 @@ Desenvolver e reunir práticas em Java com foco nos principais conceitos da Prog
 - 📊 **Vetores e Coleções:**  
   - Manipulação de arrays com objetos `Aluno`, notas e cálculo de médias.
   - Varios Exercicios de Vetores.
+  - Buscando Vetores
 
 
 ## 🧪 Projeto Final
